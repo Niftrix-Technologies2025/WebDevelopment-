@@ -1,73 +1,66 @@
-# Welcome to your Lovable project
+vite_react_shadcn_ts
+A modern React + TypeScript project built with Vite, Tailwind CSS, and shadcn/ui components.
+Includes Radix UI primitives, form validation, charting, theming, and other utility libraries for rapid UI development.
 
-## Project info
+🚀 Features
+⚡ Vite for fast dev & build times
 
-**URL**: https://lovable.dev/projects/dea6dc55-16af-4006-9ab1-caa5ea6cec26
+🎨 Tailwind CSS + tailwindcss-animate for styling & animations
 
-## How can I edit this code?
+🧩 shadcn/ui & Radix UI components for accessible, reusable UI
 
-There are several ways of editing your application.
+📅 Date handling with date-fns
 
-**Use Lovable**
+📊 Charts using recharts
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/dea6dc55-16af-4006-9ab1-caa5ea6cec26) and start prompting.
+🗂 Navigation with react-router-dom
 
-Changes made via Lovable will be committed automatically to this repo.
+✅ Form handling & validation with react-hook-form + zod
 
-**Use your preferred IDE**
+🎠 Carousel support with embla-carousel-react
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🌗 Dark mode via next-themes
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+🔄 State & API data management with @tanstack/react-query
 
-Follow these steps:
+📦 Installation
+Make sure you have Node.js 18+ installed.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+bash
+Copy
+Edit
+# Clone the repository
+git clone https://github.com/your-username/vite_react_shadcn_ts.git
+cd vite_react_shadcn_ts
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install dependencies
+npm install
+🛠 Development
+Run the development server:
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+bash
+Copy
+Edit
 npm run dev
-```
+Build for production:
 
-**Edit a file directly in GitHub**
+bash
+Copy
+Edit
+npm run build
+Preview the production build:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/dea6dc55-16af-4006-9ab1-caa5ea6cec26) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+bash
+Copy
+Edit
+npm run preview
+📂 Project Structure
+csharp
+Copy
+Edit
+vite_react_shadcn_ts/
+├── src/            # Source code
+├── public/         # Static assets
+├── package.json    # Project dependencies & scripts
+├── tailwind.config.js
+└── vite.config.ts
