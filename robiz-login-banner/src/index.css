@@ -1,0 +1,105 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 0%; /* #000000 */
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 14%; /* #242424 */
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 14%; /* #242424 */
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 44 95% 53%; /* #FCBB12 */
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 60 100% 50%; /* #FAFF00 */
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 0 0% 14%; /* #242424 */
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 44 95% 53%; /* #FCBB12 */
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 14%; /* #242424 */
+    --input: 0 0% 14%; /* #242424 */
+    --ring: 44 95% 53%; /* #FCBB12 */
+
+    --radius: 0.75rem;
+
+    --amber: 44 95% 53%; /* #FCBB12 */
+    --yellow: 60 100% 50%; /* #FAFF00 */
+    --dark: 0 0% 0%; /* #000000 */
+    --dark-gray: 0 0% 14%; /* #242424 */
+
+    --sidebar-background: 0 0% 0%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 44 95% 53%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 14%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 14%;
+    --sidebar-ring: 44 95% 53%;
+  }
+
+  .dark {
+    --background: 0 0% 0%; /* #000000 */
+    --foreground: 0 0% 100%;
+    --card: 0 0% 14%; /* #242424 */
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 14%; /* #242424 */
+    --popover-foreground: 0 0% 100%;
+    --primary: 44 95% 53%; /* #FCBB12 */
+    --primary-foreground: 0 0% 0%;
+    --secondary: 60 100% 50%; /* #FAFF00 */
+    --secondary-foreground: 0 0% 0%;
+    --muted: 0 0% 14%; /* #242424 */
+    --muted-foreground: 0 0% 70%;
+    --accent: 44 95% 53%; /* #FCBB12 */
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 62% 31%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 14%; /* #242424 */
+    --input: 0 0% 14%; /* #242424 */
+    --ring: 44 95% 53%; /* #FCBB12 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom mobile-first styles */
+.gradient-primary {
+  background: linear-gradient(135deg, #FCBB12 0%, #FAFF00 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #FCBB12 0%, #FAFF00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-effect {
+  backdrop-filter: blur(10px);
+  background: rgba(252, 187, 18, 0.1);
+}
